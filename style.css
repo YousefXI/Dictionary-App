@@ -1,0 +1,72 @@
+/* ------------------ */
+/* Custom properties */
+/* ------------------ */
+
+:root {
+   --primary: #53b3ef;
+   --secondary: #3ea9eb;
+   --gray: #bbc5cf;
+   --dark-gray: #464646;
+   --light: #ffffff;
+}
+
+/* ------------------ */
+/* Reset */
+/* ------------------ */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+}
+
+/* Reset margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+   margin: 0;
+}
+
+/* images */
+img,
+picture {
+   max-width: 100%;
+   display: block;
+}
+
+/* forms elements */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+/* ---------------
+------STYLING-----
+------------------*/
+
+body {
+   line-height: 1.5;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: var(--primary);
+   font-size: 16px;
+}
