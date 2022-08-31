@@ -123,6 +123,16 @@ body {
    color: var(--primary);
 }
 
+.wrapper .info-text {
+   font-size: 13px;
+   color: #9a9a9a;
+   margin: -3px 0 -10px;
+}
+
+.wrapper ul {
+   display: none;
+}
+
 .search i.fa-x {
    right: 15px;
    font-size: 18px;
@@ -144,7 +154,9 @@ body {
 }
 
 ul li:last-child {
-   border-bottom: none;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+   border-bottom: 0px;
 }
 
 ul .word p {
@@ -161,4 +173,31 @@ ul .word i {
    cursor: pointer;
    font-size: 15px;
    color: #999;
+}
+
+.content li .details {
+   padding-left: 20px;
+   border-radius: 4px 0 0 4px;
+   border-left: 3px solid var(--primary);
+}
+
+.content li .details p {
+   font-size: 17px;
+   font-weight: 500;
+}
+
+.content li .details span {
+   font-size: 15px;
+   color: #7e7e7e;
+}
+
+.synonyms .details .list {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.synonyms .details .list span {
+   cursor: pointer;
+   margin-right: 5px;
+   text-decoration: underline;
 }
