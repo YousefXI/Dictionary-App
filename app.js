@@ -7,7 +7,6 @@ function data(result, word) {
    if (result.title) {
       infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try to search for another word.`;
    } else {
-      console.log(result);
       wrapper.classList.add("active");
       0;
       let definitions = result[0].meanings[0].definitions[0];
@@ -19,12 +18,17 @@ function data(result, word) {
       document.querySelector(".example span").innerText = definitions.example;
       synonyms.innerHTML = "";
 
-      for (let i = 0; i < 5; i++) {
-         // for loop only first 5 synonyms
-         let tag = ` <span>${synonymsText[i]},</span>`;
-         synonyms.insertAdjacentHTML("beforeend", tag);
-
-         //fixare undefined
+      if (synonymsText[0] == undefined) {
+         //fix undefined again..
+         synonyms.parentElement.style.display = "none";
+      } else {
+         synonyms.parentElement.style.display = "block";
+         synonyms.innerHTML = "";
+         for (let i = 0; i < 5; i++) {
+            // for loop only first 5 synonyms
+            let tag = ` <span>${synonymsText[i]},</span>`;
+            synonyms.insertAdjacentHTML("beforeend", tag);
+         }
       }
    }
    console.log(result);

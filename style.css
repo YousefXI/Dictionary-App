@@ -194,6 +194,7 @@ ul .word i {
 ul .content {
    max-height: 215px;
    overflow: auto;
+   padding-right: 10px;
 }
 
 ul .content::-webkit-scrollbar {
@@ -223,6 +224,10 @@ ul .content::-webkit-scrollbar-thumb {
 .content li .details span {
    font-size: 15px;
    color: #7e7e7e;
+}
+
+.synonyms .details {
+   display: none;
 }
 
 .synonyms .details .list {
