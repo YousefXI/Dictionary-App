@@ -19,8 +19,8 @@ function data(result, word) {
       synonyms.innerHTML = "";
 
       if (synonymsText[0] == undefined) {
-         //fix undefined again..
-         synonyms.parentElement.style.display = "none";
+         //fix undefined bug
+         synonymsText.style.display = "none";
       } else {
          synonyms.parentElement.style.display = "block";
          synonyms.innerHTML = "";
